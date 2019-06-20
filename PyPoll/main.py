@@ -49,3 +49,16 @@ for key in results:
 print("________________________________________________")
 print(f"Winner: {winner}")
 print("________________________________________________")
+
+# print to file
+with open(outfile,"w") as file:
+    file.write("Election Results\n")
+    file.write("\n-------------------------\n")
+    file.write("Total Votes: " + str(sum(results.values())))
+    file.write("\n-------------------------\n")
+
+    for key in results:
+        file.write(key + ": " + str(round((results[key]/sum(results.values())) * 100 , 3 )) + "% (" + str(results[key]) + ")")
+        file.write("\n-------------------------\n")
+        file.write(f"Winner: {winner}")
+        file.write("\n-------------------------\n")
