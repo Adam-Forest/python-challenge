@@ -9,10 +9,10 @@ import csv
 
 # set path for input file
 # data directory is to levels below program location
-financials_csv = os.path.join("..", "..", "Data", "budget-data.csv")
+financials_csv = os.path.join("..", "Data", "budget-data.csv")
 
 # set path for output file
-outfile = os.path.join("..", "..", "Data", "PyBank_Financial_Summary.txt")
+outfile = os.path.join("..", "Data", "PyBank_Financial_Summary.txt")
 
 # initialize output variables
 avg_change=0

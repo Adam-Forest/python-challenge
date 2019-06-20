@@ -9,10 +9,10 @@ import csv
 
 # set path for input file
 # data directory is to levels below program location
-election_data_csv = os.path.join("..", "..", "Data", "election_data.csv")
+election_data_csv = os.path.join("..", "Data", "election_data.csv")
 
 # set path for output file
-outfile = os.path.join("..", "..", "Data", "Election_Summary.txt")
+outfile = os.path.join("..", "Data", "Election_Summary.txt")
 
 # store total votes here
 total_votes=0
